@@ -1,0 +1,409 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Poppins', sans-serif;
+  background:#f5f5f5;
+  color:#333;
+  line-height:1.7;
+}
+
+
+
+a{
+  text-decoration:none;
+}
+
+
+
+img{
+  width:100%;
+  display:block;
+}
+
+
+
+.navbar{
+  position:sticky;
+  top:0;
+  z-index:1000;
+
+  background:#1b5e20;
+
+  padding:18px 8%;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  color:#fff;
+  font-size:2rem;
+  font-weight:700;
+}
+
+
+.hero{
+  height:100vh;
+
+  background:
+  linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+  url('FINAL.png');
+
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  text-align:center;
+
+  color:white;
+
+  padding:20px;
+}
+
+.hero-content h1{
+  font-size:5rem;
+  margin-bottom:25px;
+  font-weight:700;
+}
+
+.hero-content p{
+  max-width:900px;
+  margin:auto;
+  margin-bottom:35px;
+  font-size:1.3rem;
+}
+
+
+
+.btn{
+  display:inline-block;
+
+  background:#f9a825;
+  color:white;
+
+  padding:15px 35px;
+
+  border-radius:40px;
+
+  font-size:1.05rem;
+  font-weight:500;
+
+  transition:0.4s;
+
+  border:none;
+  cursor:pointer;
+}
+
+.btn:hover{
+  background:#6d4c41;
+  transform:translateY(-5px);
+}
+
+
+
+.page-banner{
+  height:45vh;
+
+  background:#1b5e20;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  text-align:center;
+  color:white;
+}
+
+.page-banner h1{
+  font-size:4rem;
+}
+
+
+
+.section{
+  padding:80px 8%;
+}
+
+.section h2{
+  text-align:center;
+  margin-bottom:50px;
+
+  color:#1b5e20;
+
+  font-size:3rem;
+}
+
+
+
+.cards{
+  display:grid;
+
+  grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
+
+  gap:30px;
+}
+
+
+
+.card{
+  background:white;
+
+  border-radius:20px;
+
+  overflow:hidden;
+
+  box-shadow:0 6px 20px rgba(0,0,0,0.08);
+
+  transition:0.4s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+
+
+.card img{
+  height:250px;
+
+  object-fit:cover;
+
+  transition:0.5s;
+}
+
+.card:hover img{
+  transform:scale(1.08);
+}
+
+
+
+.card-content{
+  padding:25px;
+}
+
+.card-content h3{
+  color:#1b5e20;
+  margin-bottom:15px;
+  font-size:1.5rem;
+}
+
+.card-content p{
+  font-size:1rem;
+  color:#555;
+}
+
+
+
+.about{
+  background:white;
+
+  margin:40px auto;
+
+  border-radius:20px;
+
+  box-shadow:0 6px 20px rgba(0,0,0,0.08);
+}
+
+.about-text{
+  max-width:900px;
+  margin:auto;
+  text-align:center;
+}
+
+.about-text p{
+  font-size:1.2rem;
+  line-height:2;
+}
+
+
+
+.testimonials{
+  background:#f5f5f5;
+}
+
+.testimonial-card{
+  background:white;
+
+  padding:40px 30px;
+
+  border-radius:20px;
+
+  box-shadow:0 6px 20px rgba(0,0,0,0.08);
+
+  transition:0.4s;
+}
+
+.testimonial-card:hover{
+  transform:translateY(-8px);
+}
+
+.testimonial-card p{
+  font-size:1.2rem;
+  margin-bottom:20px;
+}
+
+.testimonial-card h4{
+  color:#1b5e20;
+  font-size:1.3rem;
+}
+
+
+
+.booking-form{
+  background:white;
+
+  padding:40px;
+
+  border-radius:20px;
+
+  margin-top:50px;
+
+  box-shadow:0 6px 20px rgba(0,0,0,0.08);
+}
+
+.booking-form h2{
+  margin-bottom:25px;
+}
+
+.booking-form form{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.booking-form input,
+.booking-form textarea{
+  padding:16px;
+
+  border:1px solid #ccc;
+
+  border-radius:12px;
+
+  font-family:'Poppins', sans-serif;
+
+  font-size:1rem;
+}
+
+.booking-form textarea{
+  height:150px;
+  resize:none;
+}
+
+
+
+.page-navigation{
+  display:flex;
+  justify-content:center;
+
+  gap:25px;
+
+  margin-top:60px;
+
+  flex-wrap:wrap;
+}
+
+.page-navigation .btn{
+  min-width:200px;
+  text-align:center;
+}
+
+
+
+footer{
+  background:#1b5e20;
+
+  color:white;
+
+  text-align:center;
+
+  padding:25px;
+
+  margin-top:50px;
+}
+
+
+
+@media(max-width:992px){
+
+  .hero-content h1{
+    font-size:4rem;
+  }
+
+}
+
+@media(max-width:768px){
+
+  .navbar{
+    justify-content:center;
+  }
+
+  .logo{
+    font-size:1.7rem;
+  }
+
+  .hero-content h1{
+    font-size:2.8rem;
+  }
+
+  .hero-content p{
+    font-size:1rem;
+  }
+
+  .section h2{
+    font-size:2.2rem;
+  }
+
+  .page-banner h1{
+    font-size:2.5rem;
+  }
+
+  .btn{
+    padding:13px 28px;
+  }
+
+  .about-text p{
+    font-size:1rem;
+  }
+
+  .testimonial-card p{
+    font-size:1rem;
+  }
+
+}
+
+@media(max-width:480px){
+
+  .hero-content h1{
+    font-size:2.2rem;
+  }
+
+  .hero-content p{
+    font-size:0.95rem;
+  }
+
+  .page-banner{
+    height:35vh;
+  }
+
+  .page-banner h1{
+    font-size:2rem;
+  }
+
+  .section{
+    padding:60px 6%;
+  }
+
+  .card-content{
+    padding:20px;
+  }
+
+}
